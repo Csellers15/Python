@@ -8,7 +8,7 @@ from sklearn.model_selection import cross_validate
 import pandas as pd
 
 df = pd.read_excel('titanic.xls')
-# print(df.head())
+
 df.drop(['body', 'name'], 1, inplace=True)
 df.convert_objects(convert_numeric=True)
 df.fillna(0, inplace=True)
